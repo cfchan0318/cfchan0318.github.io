@@ -1,0 +1,33 @@
+body{
+    font-family: "Ubuntu";
+    margin: 0;
+    background-color: #eee;
+    color: #111;
+}
+
+nav{
+    width: 100vw;
+    
+    display: flex;
+    background-color: aquamarine;
+    align-items: center;
+}
+
+#nav-menu{
+    margin-left: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-menu-item{
+    list-style-type: none;
+    margin:10px;
+}
+
+.nav-menu-item >a, .nav-menu-item >a:visited{
+    text-decoration: none;
+    color: #111;
+}
+
+
+
