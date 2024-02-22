@@ -1,3 +1,6 @@
+html{
+    width: 100vw;
+}
 body{
     font-family: "Ubuntu";
     margin: 0;
@@ -6,10 +9,11 @@ body{
 }
 
 nav{
-    width: 100vw;
-    
+    width: 100%;
+    margin: 0 auto;
+    padding:10px;
     display: flex;
-    background-color: aquamarine;
+    background-color: white;
     align-items: center;
 }
 
@@ -27,6 +31,89 @@ nav{
 .nav-menu-item >a, .nav-menu-item >a:visited{
     text-decoration: none;
     color: #111;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-me{
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#about-me-left{
+    width: 50%;
+}
+#about-me-right{
+    width:50%;
+}
+
+#profile-pic{
+    width: 100%;
+}
+
+/*Projects.*/
+#projects{
+    width: 800px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+/*skills.*/
+#skills{
+    width: 800px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+/*contact.*/
+#contact{
+    width: 800px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+@media only screen and (max-width:600px){
+    section#about-me{
+        width:400px;
+        flex-direction: column;
+    }
+
+    #about-me-left{
+        width: 100%;
+    }
+    #about-me-right{
+        width: 100%;
+    }
+
+    section#projects{
+        width:400px;
+        flex-direction: column;
+    }
+
+    section#skills{
+        width:400px;
+        flex-direction: column;
+    }
+
+    section#contact{
+        width:400px;
+        flex-direction: column;
+    }
+
+    #about-me > #left{
+        margin-left: 0;
+    }
 }
 
 
